@@ -1,0 +1,25 @@
+{
+  "name": "scraperapp",
+  "version": "1.0.0",
+  "description": "Web Scraper",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MG1982/scraperApp.git"
+  },
+  "author": "Mani Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MG1982/scraperApp/issues"
+  },
+  "homepage": "https://github.com/MG1982/scraperApp#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  }
+}

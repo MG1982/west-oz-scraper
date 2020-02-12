@@ -2,6 +2,7 @@
     <div class="wrapper">
         <div class="row justify-content-center">
             {{#each articles}}
+            {{#if saved}}
             <div class="card">
                 <img class="card-img-top" width="120" src="{{imageURL}}" alt="{{title}}">
                 <div class="card-body">
@@ -11,12 +12,7 @@
                     <p class="card-text">
                         {{summary}}
                     </p>
-                    {{#unless saved}}
-                    <button class="btn btn-secondary btn-sm save" data-id="{{id}}">Save Article</button>
-                    {{/unless}}
-                    {{#if saved}}
-                    <p class="saved-article">This article is saved!</p>
-                    {{/if}}
+                    <button class="delete btn btn-danger btn-sm" data-id="{{id}}"> Delete this article </button>
                     <hr class="my-4">
                     {{#if note}}
                     <p><strong>Comments:</strong></p>
@@ -36,9 +32,10 @@
                             <label for="note">Add a comment</label>
                             <textarea class="form-control" class="body" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                     </form>
                 </div>
+                {{/if}}
             </div>
             {{/each}}
         </div>

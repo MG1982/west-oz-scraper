@@ -2,16 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- External Normalize -->
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/54ddb023bd.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet">
+
+    <!-- jQuery JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <title>The West OZ Scraper</title>
+
 </head>
 
 <body>
-    {{{body}}}
+    <!-- Start of Navbar -->
 
-    <script type="text/javascript" src="/assets/javascript/app.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-custom">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="far fa-newspaper"></i> The West Australian Scraper</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="btn btn-secondary btn-sm" href="/">Home</a>
+                        <a class="btn btn-secondary btn-sm" href="/savedarticles">Saved Articles</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="btn btn-secondary btn-sm scrape navRight pull-right" href="/">Scrape New Articles</a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <div class="container">
+
+        {{{body}}}
+
+        <!-- Start of Footer -->
+
+        <footer class="page-footer font-small footer-light bg-light fixed-bottom bg-custom">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                © 2020 Copyright
+                <br />
+                Mani Gonzalez
+            </div>
+        </footer>
+
+        <!-- End of Footer -->
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

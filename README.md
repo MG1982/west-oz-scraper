@@ -17,7 +17,7 @@
 - Folder structure that meets MVC Paradigm.
 - DELETE, GET, POST and PUT routes for retrieving and adding new data.
 - AJAX - DELETE, PUT and POST requests.
-- Deployed to Heroku <a href="https://fast-brook-62147.herokuapp.com/" target="_blank">**West OZ Scraper**</a>.
+- Deployed to Heroku <a href="https://west-oz-scraper.herokuapp.com/" target="_blank">**West OZ Scraper**</a>.
 - No Exposed sensitive keys.
 
 ## Dependencies:

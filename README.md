@@ -1,5 +1,3 @@
-<a href="https://fast-brook-62147.herokuapp.com/"  target="_blank"><img src="public/assets/images/WestOZScraper.jpg" title="West OZ Scraper" alt="West OZ Scraper"></a>
-
 # West OZ Scraper
 
 > ### Scrapes the West Australian news website
@@ -8,6 +6,12 @@
 > _Save articles to the Database._  
 > _View all saved articles on the saved articles page._  
 > _Remove articles from the database and savedarticles page._
+
+## Click <a href="https://west-oz-scraper.herokuapp.com/" target="_blank"> here</a> to see the live app.
+
+This is the Home Page:
+
+<a href="https://west-oz-scraper.herokuapp.com/"  target="_blank"><img src="public/assets/images/WestOZScraper.jpg" title="West OZ Scraper" alt="West OZ Scraper"></a>
 
 ## Build Features
 
@@ -34,3 +38,5 @@
 - Clone this repo to your local machine.
 - run npm install
 - open your browser and enter ( localhost:3000/ ) without the brackets in the address bar.
+
+Thank you for visiting!

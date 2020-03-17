@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".save").on("click", function () {
         event.preventDefault();
         id = $(this).attr("data-id");
-        console.log(id);
+        // console.log(id);
         saveArticle();
     });
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
         event.preventDefault();
         id = $(this).attr("data-id");
         body = $(this).find("textarea").val();
-        console.log(id + "\n" + body);
+        // console.log(id + "\n" + body);
         postNote();
     });
 
@@ -53,7 +53,7 @@ $(document).ready(function () {
     $(".delComment").on("click", function (event) {
         event.preventDefault();
         id = $(this).attr("data-id");
-        console.log(id);
+        // console.log(id);
         deleteNote();
     });
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
     $(".delete").on("click", function (event) {
         event.preventDefault();
         id = $(this).attr("data-id");
-        console.log(id);
+        // console.log(id);
         deleteArticle();
     });
 });

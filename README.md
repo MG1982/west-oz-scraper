@@ -11,7 +11,11 @@
 
 This is the Home Page:
 
-<a href="https://west-oz-scraper.herokuapp.com/"  target="_blank"><img src="public/assets/images/WestOZScraper.jpg" title="West OZ Scraper" alt="West OZ Scraper"></a>
+<img src="public/assets/images/WestOZScraper.jpg" title="West OZ Scraper" alt="West OZ Scraper Home">
+
+This is the Saved Articles Page:
+
+<img src="public/assets/images/SavedSS.jpg" title="West OZ Scraper Saved Articles" alt="West OZ Scraper Saved Articles">
 
 ## Build Features
 

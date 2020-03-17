@@ -2,6 +2,7 @@ $(document).ready(function () {
     let id;
     let body;
 
+    // Save Article Function 
     function saveArticle() {
         $.ajax({
             method: "PUT",
@@ -14,6 +15,7 @@ $(document).ready(function () {
         });
     };
 
+    // Save button click function
     $(".save").on("click", function () {
         event.preventDefault();
         id = $(this).attr("data-id");
@@ -21,6 +23,7 @@ $(document).ready(function () {
         saveArticle();
     });
 
+    // Add Note Function
     function postNote() {
         $.ajax({
             method: "POST",
@@ -33,6 +36,7 @@ $(document).ready(function () {
         });
     };
 
+    // On Submit Comment
     $(".comment").on("submit", function (event) {
         event.preventDefault();
         id = $(this).attr("data-id");
@@ -41,6 +45,7 @@ $(document).ready(function () {
         postNote();
     });
 
+    // Delete Comment Function
     function deleteNote() {
         $.ajax({
             method: "DELETE",
@@ -50,6 +55,7 @@ $(document).ready(function () {
         });
     };
 
+    // Delete Comment Button
     $(".delComment").on("click", function (event) {
         event.preventDefault();
         id = $(this).attr("data-id");
@@ -57,6 +63,7 @@ $(document).ready(function () {
         deleteNote();
     });
 
+    // Delete Article Function
     function deleteArticle() {
         $.ajax({
             method: "PUT",
@@ -69,6 +76,7 @@ $(document).ready(function () {
         });
     };
 
+    // Delete Article Button
     $(".delete").on("click", function (event) {
         event.preventDefault();
         id = $(this).attr("data-id");

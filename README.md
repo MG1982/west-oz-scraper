@@ -7,7 +7,7 @@
 > _View all saved articles on the saved articles page._  
 > _Remove articles from the database and savedarticles page._
 
-## Click <a href="https://west-oz-scraper.herokuapp.com/" target="_blank" > here</a> to see the live app.
+## Click <a href="https://west-oz-scraper.herokuapp.com" target="_blank" > here</a> to see the live app.
 
 This is the Home Page:
 
@@ -25,7 +25,7 @@ This is the Saved Articles Page:
 - Folder structure that meets MVC Paradigm.
 - DELETE, GET, POST and PUT routes for retrieving and adding new data.
 - AJAX - DELETE, PUT and POST requests.
-- Deployed to Heroku <a href="https://west-oz-scraper.herokuapp.com/" target="_blank">**West OZ Scraper**</a>.
+- Deployed to Heroku <a href="https://west-oz-scraper.herokuapp.com" target="_blank">**West OZ Scraper**</a>.
 - No Exposed sensitive keys.
 
 ## Dependencies:

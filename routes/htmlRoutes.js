@@ -4,7 +4,7 @@ const db = require("../models");
 const theWestURL = "https://thewest.com.au/news/wa";
 
 module.exports = function (app) {
-
+    // Scrape Articles Route
     app.get("/", function (req, res) {
         axios.get(theWestURL).then(function (response) {
             const $ = cheerio.load(response.data);
@@ -31,7 +31,7 @@ module.exports = function (app) {
                 });
             });
     });
-
+    // Retrieve Saved Articles Route
     app.get("/savedarticles", function (req, res) {
         db.Article.find({})
             .populate("note")

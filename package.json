@@ -1,5 +1,5 @@
 {
-  "name": "scraperapp",
+  "name": "westOzScraper",
   "version": "1.0.0",
   "description": "Web Scraper",
   "main": "server.js",

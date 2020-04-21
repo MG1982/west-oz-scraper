@@ -21,7 +21,7 @@ app.set("view engine", "handlebars")
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 app.listen(PORT, function () {
     console.log("App running on port " + PORT + "!");

@@ -10,7 +10,7 @@ module.exports = function (app) {
             const $ = cheerio.load(response.data);
 
             // Regex for image URL
-            let sourceRegEx = /src=\"([^\"]*)/i
+            // let sourceRegEx = /src=\"([^\"]*)/i
 
             $(".PortraitCard").each(function (i, element) {
                 let result = {};
@@ -18,8 +18,9 @@ module.exports = function (app) {
                 result.title = $(this).find(".Card-HeadlineText").text();
                 result.link = theWestURL + $(this).find("a").attr("href");
                 result.summary = $(this).find("p").text();
-                result.imageURL = sourceRegEx.exec($(this).find("picture").text())[1];
-
+                // result.imageURL = sourceRegEx.exec($(this).find("picture").text())[1];
+                // result.imageURL = $(this).find("img").attr("src");
+                // console.log(result.imageURL = $(this).find("Card-Media-Content image").attr("src"));
                 db.Article.create(result)
             });
         })

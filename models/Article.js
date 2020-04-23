@@ -15,11 +15,6 @@ const ArticleSchema = new Schema({
     summary: {
         type: String
     },
-    imageURL: {
-        type: String,
-        required: true,
-        unique: true
-    },
     note: [{
         type: Schema.Types.ObjectId,
         ref: "Note"
